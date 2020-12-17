@@ -39,7 +39,7 @@ body {
   .header__inside {
     height: 100%;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -49,7 +49,7 @@ body {
   display: flex;
   height: 100rem;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto; }
 
 .sidebar {
@@ -210,12 +210,12 @@ body {
   .side-nav__icon {
     margin-right: 2rem; }
 
-.dashboard {
-  flex: 0 0 65%;
-  background-color: orange; }
-
 .info {
-  width: 100%; }
+  width: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   .info__selected {
     margin-top: 2rem;
     padding: 2rem 0 3.5rem 3rem;
@@ -259,4 +259,73 @@ body {
 .messages {
   display: flex;
   border-top: 1px solid rgba(0, 0, 0, 0.4);
-  padding: 4rem 3rem; }
+  padding: 4rem 0; }
+  .messages__icon {
+    padding: 1rem;
+    color: #fff;
+    background-color: var(--color-primary);
+    border-radius: 7px;
+    margin-left: 3rem;
+    position: relative; }
+  .messages__icon::before {
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #78b61b;
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    z-index: 10; }
+  .messages__icon::after {
+    content: "";
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -3px;
+    right: -5px; }
+  .messages__text {
+    margin-left: 1rem; }
+    .messages__text > h4 {
+      margin-top: 1rem;
+      text-transform: uppercase;
+      color: var(--color-grey-dark-3);
+      line-height: .8;
+      font-size: .9rem; }
+  .messages__internal > p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+    font-weight: 500; }
+  .messages__internal > span {
+    color: var(--color-grey-dark-2);
+    font-size: 1.4rem; }
+  .messages__internal {
+    display: flex;
+    align-items: center; }
+
+.dashboard {
+  flex: 0 0 65%;
+  background-color: #fff;
+  padding: 3rem; }
+  .dashboard__l1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .dashboard__l2 {
+    display: flex;
+    justify-content: space-between; }
+
+.l1-list {
+  list-style: none;
+  display: flex; }
+  .l1-list__item:not(:first-child) {
+    padding-left: 1rem; }
+
+.l2-list {
+  list-style: none;
+  display: flex; }
+  .l2-list__item:not(:first-child) {
+    padding-left: 1rem; }

@@ -1,0 +1,43 @@
+// dashboard
+.dashboard {
+    flex: 0 0 65%;
+    background-color: #fff;
+    padding: 3rem;
+
+    &__title {
+
+    }
+
+    &__l1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__l2 {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.l1-list {
+    list-style: none;
+    display: flex;
+
+    &__item:not(:first-child) {
+        padding-left: 1rem;
+    }
+
+    &__link {
+
+    }
+}
+
+.l2-list {
+    list-style: none;
+    display: flex;
+
+    &__item:not(:first-child) {
+        padding-left: 1rem;
+    }
+}
