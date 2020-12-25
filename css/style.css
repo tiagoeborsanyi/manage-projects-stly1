@@ -359,3 +359,24 @@ body {
     margin-left: .7rem; }
   .l2-list__icon {
     font-size: 1.7rem; }
+
+.list-cards {
+  height: 250px;
+  width: 100%;
+  background-color: turquoise;
+  display: inline-block; }
+
+.card {
+  width: 33.1111%;
+  display: inherit; }
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 1rem .3rem; }
+  .card__image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; }

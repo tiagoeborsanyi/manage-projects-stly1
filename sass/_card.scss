@@ -1,0 +1,26 @@
+.list-cards {
+    height: 250px;
+    width: 100%;
+    background-color: turquoise;
+    display: inline-block;
+}
+
+.card {
+    width: 33.1111%;
+    display: inherit;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        margin: 1rem .3rem;
+    }
+
+    &__image {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+}
