@@ -93,24 +93,27 @@
 
             <div class="dashboard__l1">
               <ul class="l1-list">
-                <li class="l1-list__item"><a href="#" class="l1-list__link">All</a></li>
+                <li class="l1-list__item"><a href="#" class="l1-list__link actived">All</a></li>
                 <li class="l1-list__item active"><a href="#" class="l1-list__link">Organization</a></li>
               </ul>
-              <form action="#">
-                <input type="text" placeholder="Search by name">
+              <form action="#" class="search">
+                <input type="text" class="search__input dashboard__l1--input" placeholder="Search by name">
+                <button class="search__button dashboard__l1--button">
+                  <span class="material-icons search__icon">search</span>
+                </button>
               </form>
             </div>
 
             <div class="dashboard__l2">
               <ul class="l2-list">
-                <li class="l2-list__item"><a href="#">Design Team</a></li>
-                <li class="l2-list__item"><a href="#">Position</a></li>
-                <li class="l2-list__item"><a href="#">More</a></li>
+                <li class="l2-list__item"><a href="#" class="l2-list__link">Design Team</a></li>
+                <li class="l2-list__item"><a href="#" class="l2-list__link">Position</a></li>
+                <li class="l2-list__item"><a href="#" class="l2-list__link">More</a></li>
               </ul>
               <div>
-                <span>Sort by:</span>
-                <button>All</button>
-                <span class="material-icons">keyboard_arrow_down</span>
+                <span class="l2-list__link">Sort by:</span>
+                <button class="l2-list__button">All</button>
+                <span class="material-icons l2-list__icon">keyboard_arrow_down</span>
               </div>
             </div>
           </main>
