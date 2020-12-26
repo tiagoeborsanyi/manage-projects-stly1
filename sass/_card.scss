@@ -36,13 +36,15 @@
         color: black;
     }
 
-    &__image-border {
+    &__image-border,
+    &__circle-online {
         position: relative;
         margin-bottom: .8rem;
         border-radius: 50%;
     }
 
-    &__image-border::before {
+    &__image-border::before,
+    &__circle-online::before {
         content: "";
         position: absolute;
         top: 8px;
@@ -52,6 +54,10 @@
         border: 3px solid var(--color-bar-1);
         border-radius: 50%;
         z-index: 10;
+    }
+
+    &__circle-online::before {
+        border: 3px solid #60970e;
     }
 
     &__image-border::after {
